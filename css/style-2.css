@@ -1,0 +1,43 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/tim-png.PNG");
+    background-position: center;
+    background-size: cover;
+}
+
+.knapp {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1000;
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.minion {
+    position: absolute;
+}
+
+.minion > img {
+    width: 20vw;
+    height: auto;
+}
+
+.minion-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.sten {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 15rem;
+    height: 18rem;
+}

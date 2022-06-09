@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style-2.css">
+</head>
+
+<body>
+    <button class="knapp">
+        E
+    </button>
+
+    <div class="meny hide">
+        <img src="img/menu.PNG" alt="Lukas">
+    </div>
+
+    <a href="https://www.figma.com/proto/4JCAFCGY15kuXFB9PbC60a/Jens-ska-bli-torterad?node-id=22%3A9&scaling=scale-down&page-id=0%3A1&starting-point-node-id=4%3A2&show-proto-sidebar=1">
+
+        <img src="img/sten.jfif" alt="" class="sten">
+    </a>
+
+    <script>
+        const b = document.querySelector('.knapp');
+        const m = document.querySelector('.meny');
+        b.addEventListener("click", (e) => {
+            m.classList.toggle('hide');
+        });
+
+        let c = 1;
+        let i;
+
+        function getRandomArbitrary(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        const minion = (x, y) => {
+            const min = document.createElement('div');
+            const img = document.createElement('img');
+            const button = document.createElement('button');
+            button.classList.add('minion-button');
+            button.textContent = 'x'
+            button.addEventListener("click", (e) => {
+                for (i = 0; i < c; i++) {
+                    minion(getRandomArbitrary(0, window.innerWidth), getRandomArbitrary(0, window.innerHeight));
+                }
+                c++;
+            });
+            img.src = 'img/minion.png';
+            // img.classList.add('minion');
+            min.appendChild(img);
+            min.appendChild(button);
+            min.classList.add('minion');
+            min.style.top = x + 'px';
+            min.style.left = y + 'px';
+            document.body.appendChild(min);
+        }
+
+        minion(100, 100);
+
+    </script>
+</body>
+
+</html>
