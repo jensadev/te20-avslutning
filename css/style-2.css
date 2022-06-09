@@ -41,3 +41,10 @@ body {
     width: 15rem;
     height: 18rem;
 }
+
+.meny {
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    z-index: 100000;
+}
