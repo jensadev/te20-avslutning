@@ -1,0 +1,71 @@
+body {
+    width: 300vw;
+    height: 100vh;
+    background-image: url("../img/polish-cow.gif");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.pinkgrej {
+    margin-top: 20rem;
+    width: 100%;
+    transform: rotate(4deg);
+    background-color: pink;
+    color: white;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    z-index: 200;
+}
+
+button {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100%;
+    background-color: green;
+    color: white;
+    font-size: 2rem;
+}
+
+.meny {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1000;
+}
+
+button {
+    z-index: 200;
+    position: relative;
+}
+
+.hide {
+    display: none;
+}
+
+.ett, .tva, .tre, .fyra, .fem, .sex {
+    position: absolute;
+}
+
+.fyra {
+    z-index: 30;
+}
+.ett {
+    z-index: 40;
+    left: 300px;
+}
+.tva {
+    z-index: 80;
+}
+
+.fem {
+
+}
+
+.sex {
+    z-index: 50;
+    top: 200px;
+    left: 400px;
+}
